@@ -3,7 +3,7 @@ name: Build and Push Docker Image to ECR            # Workflow name as shown in 
 on:                                                 # Event(s) that trigger this workflow
   push:                                             # Trigger when code is pushed
     branches:                                       # Limit to specific branches
-      - main                                        # Only run on pushes to the 'main' branch
+      - master                                        # Only run on pushes to the 'main' branch
 
 permissions:                                        # Permissions granted to the GitHub Actions token
   id-token: write                                   # REQUIRED for OIDC to assume AWS IAM role without secrets
